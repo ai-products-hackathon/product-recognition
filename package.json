@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/ai-products-hackathon/product-recognition#readme",
   "devDependencies": {
-    "open": "^7.4.2"
+    "open": "^7.4.2",
+    "typescript": "^4.2.2"
   }
 }
