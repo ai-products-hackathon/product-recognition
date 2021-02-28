@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Product Extractor</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="tailwind.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="p-2 flex w-full items-center justify-center bg-grey-lighter">
+            <label class="w-72 flex flex-col items-center px-4 py-6 bg-white text-blue rounded-lg shadow-md tracking-wide uppercase border border-blue-50 cursor-pointer hover:bg-blue-50 ">
+                <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z" />
+                </svg>
+                <span class="mt-2 text-base leading-normal">Select a media file</span>
+                <input id="mediaPicker" type="file" class="hidden" accept="video/*,image/*" />
+            </label>
+        </div>    
+        <div class="p-2 flex w-full bg-white flex items-center justify-center space-x-4">
+                <form class="max-w-xl m-4 p-10 bg-white rounded shadow-md">
+                  <p class="text-gray-800 font-medium">Enter product information</p>
+                  <div class="relative mt-2">
+                    <label class="block text-sm text-gray-00" for="name">Name</label>
+                    <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="name" name="name" type="text" placeholder="Product Name" aria-label="Name" value="Tul">
+                  </div>
+                  <ul class="bg-white border border-gray-100 w-full mt-2">
+                    <li class="pl-8 pr-2 py-1 border-b-2 border-gray-100 relative cursor-pointer hover:bg-yellow-50 hover:text-gray-900">
+                        <svg class="absolute w-4 h-4 left-2 top-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                        <b>Tul</b>ips
+                    </li>
+                    <li class="pl-8 pr-2 py-1 border-b-2 border-gray-100 relative cursor-pointer hover:bg-yellow-50 hover:text-gray-900">
+                        <svg class="absolute w-4 h-4 left-2 top-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                        <b>Tul</b>ips Double
+                    </li>
+                </ul>
+                  <div class="mt-2">
+                    <label class="block text-sm text-gray-00" for="description">Description</label>
+                    <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="descritpion" name="description" type="text" placeholder="Description" aria-label="Description">
+                  </div>                                  
+                  <div class="mt-2">
+                    <label class="block text-sm text-gray-00" for="price">Price</label>
+                    <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="price" name="price" type="text" placeholder="Price" aria-label="Price">
+                  </div>
+                </form>
+          </div>
+        <script src="index.js"></script>    
+    </body>
+</html>
